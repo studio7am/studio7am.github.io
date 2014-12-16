@@ -9,6 +9,7 @@
 		<link rel="author" href="humans.txt">
 		<meta name="description" content="Студия 7 утра - сайты, веб и мобильные приложения" />
 		<link rel="stylesheet" href="/css/style.css">	
+		<link rel="stylesheet" href="/bower_components/nprogress/nprogress.css">	
 	    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
@@ -43,6 +44,7 @@
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <a href="" class="btn btn-danger">Кнопка</a>
 </div>
+
     </div>
 
 
@@ -53,9 +55,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>if (!window.jQuery) {document.write('<script src="js/jquery.min.js"><\/script>');}</script>
 	<script src="/js/custom.js"></script>
+	<script src="/bower_components/nprogress/nprogress.js"></script>
+
 
     <script>
-		// analytics code
+ $(document).ready(function () {
+    NProgress.start();
+    NProgress.done();
+});
     </script>	
 	</body>
 </html>
