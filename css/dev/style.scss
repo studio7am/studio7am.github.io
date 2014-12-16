@@ -1,3 +1,13 @@
 @import "boot/bootstrap.scss";
 @import "cms/color-me-sass.scss";
 @import "custom.scss"; //Custom Style
+
+.container {
+  max-width: 780px;
+}
+
+nav {
+  padding: 15px 0;
+  border-bottom: 3px solid $turquoise;
+  margin-bottom: 15px;
+}
